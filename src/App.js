@@ -47,10 +47,11 @@ function App() {
           Search
         </Button>
       </Form>
-      <h1>Main Page</h1>
+      <h1>Weather App</h1>
       {weather && (
         <>
           <h3>{weather.data.name}</h3>
+          <h3>{weather.data.main.temp}°C</h3>
         </>
       )}
     </div>
